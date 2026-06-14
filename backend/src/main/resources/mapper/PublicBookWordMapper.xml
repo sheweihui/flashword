@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.PublicBookWordMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.PublicBookWord">
+        <id column="id" property="id" />
+        <result column="book_id" property="bookId" />
+        <result column="word_id" property="wordId" />
+        <result column="sort_order" property="sortOrder" />
+        <result column="created_at" property="createdAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, book_id, word_id, sort_order, created_at
+    </sql>
+
+    <!-- 插入关联记录 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO public_book_word (
+            book_id, word_id, sort_order, created_at
+        ) VALUES (
+            #{bookId}, #{wordId}, #{sortOrder}, NOW()
+        )
+    </insert>
+
+    <!-- 根据单词书ID查询单词列表 -->
+    <select id="selectByBookId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_book_word
+        WHERE book_id = #{bookId}
+        ORDER BY sort_order ASC
+    </select>
+
+    <!-- 批量插入 -->
+    <insert id="batchInsert">
+        INSERT INTO public_book_word (
+            book_id, word_id, sort_order, created_at
+        ) VALUES
+        <foreach collection="list" item="item" separator=",">
+            (
+                #{item.bookId}, #{item.wordId}, #{item.sortOrder}, NOW()
+            )
+        </foreach>
+    </insert>
+
+    <!-- 统计单词书的单词数量 -->
+    <select id="countByBookId" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM public_book_word WHERE book_id = #{bookId}
+    </select>
+
+</mapper>

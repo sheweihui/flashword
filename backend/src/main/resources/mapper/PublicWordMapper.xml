@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.PublicWordMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.PublicWord">
+        <id column="id" property="id" />
+        <result column="word_text" property="wordText" />
+        <result column="phonetic" property="phonetic" />
+        <result column="part_of_speech" property="partOfSpeech" />
+        <result column="definition" property="definition" />
+        <result column="example_sentence" property="exampleSentence" />
+        <result column="example_translation" property="exampleTranslation" />
+        <result column="audio_url" property="audioUrl" />
+        <result column="difficulty_level" property="difficultyLevel" />
+        <result column="frequency_rank" property="frequencyRank" />
+        <result column="tags" property="tags" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, word_text, phonetic, part_of_speech, definition, 
+        example_sentence, example_translation, audio_url, difficulty_level, 
+        frequency_rank, tags, created_at, updated_at
+    </sql>
+
+    <!-- 插入公共单词 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO public_word (
+            word_text, phonetic, part_of_speech, definition, 
+            example_sentence, example_translation, audio_url, difficulty_level, 
+            frequency_rank, tags, created_at, updated_at
+        ) VALUES (
+            #{wordText}, #{phonetic}, #{partOfSpeech}, #{definition}, 
+            #{exampleSentence}, #{exampleTranslation}, #{audioUrl}, #{difficultyLevel}, 
+            #{frequencyRank}, #{tags}, NOW(), NOW()
+        )
+    </insert>
+
+    <!-- 根据ID查询 -->
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_word
+        WHERE id = #{id}
+    </select>
+
+    <!-- 根据单词文本查询 -->
+    <select id="selectByWordText" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_word
+        WHERE word_text = #{wordText}
+    </select>
+
+    <!-- 根据ID列表批量查询 -->
+    <select id="selectByIds" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_word
+        WHERE id IN
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+
+    <!-- 根据关键词模糊搜索 -->
+    <select id="selectByKeyword" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_word
+        WHERE word_text LIKE CONCAT('%', #{keyword}, '%')
+        ORDER BY frequency_rank ASC
+        LIMIT 10
+    </select>
+
+    <!-- 根据标签查询 -->
+    <select id="selectByTags" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_word
+        WHERE tags LIKE CONCAT('%', #{tags}, '%')
+        ORDER BY frequency_rank ASC
+    </select>
+
+    <!-- 批量插入 -->
+    <insert id="batchInsert">
+        INSERT INTO public_word (
+            word_text, phonetic, part_of_speech, definition, 
+            example_sentence, example_translation, audio_url, difficulty_level, 
+            frequency_rank, tags, created_at, updated_at
+        ) VALUES
+        <foreach collection="list" item="item" separator=",">
+            (
+                #{item.wordText}, #{item.phonetic}, #{item.partOfSpeech}, #{item.definition}, 
+                #{item.exampleSentence}, #{item.exampleTranslation}, #{item.audioUrl}, #{item.difficultyLevel}, 
+                #{item.frequencyRank}, #{item.tags}, NOW(), NOW()
+            )
+        </foreach>
+    </insert>
+
+</mapper>

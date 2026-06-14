@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.SeckillActivityMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.SeckillActivity">
+        <id column="id" property="id" />
+        <result column="product_id" property="productId" />
+        <result column="seckill_price" property="seckillPrice" />
+        <result column="stock" property="stock" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, product_id, seckill_price, stock, start_time, end_time
+    </sql>
+
+    <!-- 根据ID查询秒杀活动 -->
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM seckill_activity
+        WHERE id = #{id}
+    </select>
+
+    <!-- 查询所有秒杀活动（按开始时间排序） -->
+    <select id="selectAllActivities" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM seckill_activity
+        ORDER BY start_time ASC
+    </select>
+
+    <!-- 扣减库存（乐观锁） -->
+    <update id="deductStock">
+        UPDATE seckill_activity
+        SET stock = stock - 1
+        WHERE id = #{id} AND stock > 0
+    </update>
+
+</mapper>

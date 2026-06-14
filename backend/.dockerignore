@@ -1,0 +1,40 @@
+# Docker 相关文件
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+.dockerignore
+
+# 日志文件
+logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Git
+.git/
+.gitignore
+
+# 文档
+docs/
+*.md
+!README.md
+
+# Python AI 服务（如果有的话）
+wordagent/
+*.py
+__pycache__/
+.venv/
+
+# 环境变量（包含敏感信息）
+.env
+
+# 临时文件
+*.tmp
+*.bak

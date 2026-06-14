@@ -1,0 +1,211 @@
+.container {
+  min-height: 100vh;
+  background: var(--bg-page);
+  padding-bottom: 120rpx;
+}
+
+/* ===== 问候语 ===== */
+.greeting {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 16rpx;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== 进度卡片 ===== */
+.progress-card {
+  background: #fff;
+  margin: -36rpx 24rpx 20rpx;
+  border-radius: var(--radius-lg);
+  padding: 32rpx;
+  box-shadow: 0 8rpx 32rpx rgba(74, 144, 217, 0.12);
+  position: relative;
+  z-index: 2;
+}
+
+.progress-ring-section {
+  display: flex;
+  align-items: center;
+  gap: 32rpx;
+}
+
+.progress-ring {
+  position: relative;
+  width: 140rpx;
+  height: 140rpx;
+  flex-shrink: 0;
+}
+
+.ring-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 10rpx solid #e8eaed;
+}
+
+.ring-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 10rpx solid transparent;
+  border-top-color: var(--primary);
+  border-right-color: var(--primary);
+  transition: transform 0.8s var(--ease-out);
+}
+
+.ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-percent {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.progress-info {
+  flex: 1;
+}
+
+.progress-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: block;
+}
+
+.progress-count {
+  font-size: 26rpx;
+  color: var(--text-muted);
+  margin-top: 6rpx;
+  display: block;
+}
+
+.progress-hint {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  display: block;
+}
+
+/* ===== 快捷操作 ===== */
+.actions-section {
+  margin: 0 24rpx 20rpx;
+  display: flex;
+  gap: 16rpx;
+}
+
+.action-card {
+  flex: 1;
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 24rpx;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12rpx;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.action-card:active {
+  transform: scale(0.96);
+  box-shadow: var(--shadow-md);
+}
+
+.action-icon-wrap {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5eb97d, #7ed39e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+}
+
+.action-icon-wrap.purple {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.action-label {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.action-arrow {
+  font-size: 28rpx;
+  color: var(--text-muted);
+}
+
+/* ===== 统计行 ===== */
+.stats-row {
+  display: flex;
+  margin: 0 24rpx;
+  gap: 16rpx;
+}
+
+.stat-card {
+  flex: 1;
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 28rpx 16rpx;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+}
+
+.stat-card:active {
+  transform: scale(0.96);
+}
+
+.stat-value {
+  font-size: 44rpx;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+}
+
+.stat-label {
+  font-size: 24rpx;
+  color: var(--text-muted);
+  margin-top: 8rpx;
+  display: block;
+}
+
+/* ===== 骨架 ===== */
+.progress-card.skeleton {
+  padding: 32rpx;
+}
+
+.skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: 32rpx;
+}
+
+.skeleton-circle-big {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.skeleton-lines {
+  flex: 1;
+}
+
+.skeleton-line {
+  height: 28rpx;
+  margin-bottom: 16rpx;
+}
+
+.skeleton-line.long { width: 70%; }
+.skeleton-line.short { width: 40%; }
+.skeleton-line.bar { width: 100%; height: 16rpx; border-radius: 8rpx; }

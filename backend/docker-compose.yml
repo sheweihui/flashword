@@ -1,0 +1,105 @@
+services:
+  # ==================== Java 应用 ====================
+  app:
+    build: .                          # 从当前目录的 Dockerfile 构建
+    container_name: vocabulary-app    # 容器名称
+    ports:
+      - "8080:8080"                   # 映射端口：宿主机8080 -> 容器8080
+    environment:
+      # 数据库配置（覆盖 application.yml）
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/app?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456
+      # Redis 配置
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+      # RabbitMQ 配置
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+      SPRING_RABBITMQ_USERNAME: guest
+      SPRING_RABBITMQ_PASSWORD: guest
+      # AI 配置（通过 .env 文件或系统环境变量设置，不要硬编码）
+      AI_API_KEY: ${AI_API_KEY:-}
+    depends_on:
+      mysql:
+        condition: service_healthy    # 等待 MySQL 健康检查通过
+      redis:
+        condition: service_started
+      rabbitmq:
+        condition: service_started
+    networks:
+      - app-network
+    restart: unless-stopped           # 异常退出时自动重启
+    volumes:
+      - ./logs:/app/logs              # 挂载日志目录
+
+  # ==================== MySQL 数据库 ====================
+  mysql:
+    image: mysql:8.0                  # 使用 MySQL 8.0 官方镜像
+    container_name: vocabulary-mysql
+    ports:
+      - "3307:3306"                   # 宿主机3307→容器3306（避免与本机MySQL冲突）
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: app
+      TZ: Asia/Shanghai               # 设置时区
+    command: 
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --default-time-zone=+08:00
+    volumes:
+      - mysql-data:/var/lib/mysql     # 持久化数据
+      - ./src/main/resources/db/app.sql:/docker-entrypoint-initdb.d/init.sql  # 初始化脚本
+    healthcheck:                      # 健康检查
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p123456"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # ==================== Redis 缓存 ====================
+  redis:
+    image: redis:7-alpine             # 使用 Alpine 版本的 Redis 7（更小）
+    container_name: vocabulary-redis
+    ports:
+      - "6379:6379"                   # 可选：暴露给宿主机
+    command: redis-server --appendonly yes  # 开启 AOF 持久化
+    volumes:
+      - redis-data:/data              # 持久化数据
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # ==================== RabbitMQ 消息队列 ====================
+  rabbitmq:
+    image: rabbitmq:3-management        # 3.x 版本，Overview 有经典折线图
+    container_name: vocabulary-rabbitmq
+    ports:
+      - "5672:5672"                     # AMQP 协议端口
+      - "15672:15672"                   # 管理界面端口
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+      - ./rabbitmq.conf:/etc/rabbitmq/conf.d/management_agent.conf  # 开启指标采集
+    networks:
+      - app-network
+    restart: unless-stopped
+
+# ==================== 数据卷（持久化存储）====================
+volumes:
+  mysql-data:
+    driver: local
+  redis-data:
+    driver: local
+  rabbitmq-data:
+    driver: local
+
+# ==================== 网络（内部通信）====================
+networks:
+  app-network:
+    driver: bridge                    # 桥接网络模式

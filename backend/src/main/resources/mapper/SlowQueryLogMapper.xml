@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.SlowQueryLogMapper">
+
+    <insert id="insert" parameterType="org.example.entity.SlowQueryLog">
+        INSERT INTO slow_query_log (method_name, cost_ms, threshold_ms, result_type)
+        VALUES (#{methodName}, #{costMs}, #{thresholdMs}, #{resultType})
+    </insert>
+
+</mapper>

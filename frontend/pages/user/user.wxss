@@ -1,0 +1,322 @@
+.container {
+  min-height: 100vh;
+  background: var(--bg-page);
+  padding-bottom: 40rpx;
+}
+
+/* ===== 头部玻璃拟态 ===== */
+.profile-glass {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: var(--radius-lg);
+  padding: 24rpx;
+  border: 1rpx solid rgba(255,255,255,0.15);
+}
+
+.profile-left {
+  flex-shrink: 0;
+}
+
+.avatar-wrap {
+  position: relative;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255,255,255,0.6);
+}
+
+.level-badge {
+  position: absolute;
+  bottom: -8rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #ffd700, #ffaa00);
+  color: #7a5500;
+  font-size: 20rpx;
+  font-weight: 700;
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+  white-space: nowrap;
+  box-shadow: 0 2rpx 8rpx rgba(255, 215, 0, 0.4);
+}
+
+.profile-info {
+  margin-left: 24rpx;
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+}
+
+.profile-streak {
+  display: flex;
+  align-items: center;
+  margin-top: 8rpx;
+}
+
+.streak-text {
+  font-size: 24rpx;
+  color: rgba(255,255,255,0.85);
+  margin-left: 8rpx;
+}
+
+/* 进度条 */
+.progress-bar-wrap {
+  height: 8rpx;
+  background: rgba(255,255,255,0.2);
+  border-radius: 4rpx;
+  overflow: hidden;
+  margin-top: 24rpx;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #fff;
+  border-radius: 4rpx;
+  transition: width 0.8s var(--ease-out);
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12rpx;
+}
+
+.progress-label {
+  font-size: 24rpx;
+  color: rgba(255,255,255,0.8);
+}
+
+.progress-count {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ===== 积分卡片 ===== */
+.points-card {
+  position: relative;
+  margin: -36rpx 24rpx 20rpx;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8rpx 32rpx rgba(102, 126, 234, 0.25);
+}
+
+.points-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.points-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28rpx 32rpx;
+}
+
+.points-left {
+  flex: 1;
+}
+
+.points-label {
+  font-size: 24rpx;
+  color: rgba(255,255,255,0.8);
+}
+
+.points-value {
+  display: flex;
+  align-items: baseline;
+  margin-top: 8rpx;
+}
+
+.points-coin {
+  font-size: 36rpx;
+  margin-right: 8rpx;
+}
+
+.points-number {
+  font-size: 56rpx;
+  font-weight: 700;
+  color: #fff;
+}
+
+.points-meta {
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+  font-size: 22rpx;
+  color: rgba(255,255,255,0.65);
+}
+
+.points-divider {
+  margin: 0 12rpx;
+  opacity: 0.4;
+}
+
+.points-right {
+  margin-left: 24rpx;
+  flex-shrink: 0;
+}
+
+.checkin-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120rpx;
+  height: 120rpx;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border: 1rpx solid rgba(255,255,255,0.15);
+  border-radius: 24rpx;
+  transition: all 0.3s;
+}
+
+.checkin-btn:active {
+  transform: scale(0.92);
+}
+
+.checkin-btn.checked-in {
+  background: rgba(255,255,255,0.1);
+}
+
+.checkin-icon {
+  font-size: 36rpx;
+}
+
+.checkin-text {
+  font-size: 22rpx;
+  color: rgba(255,255,255,0.9);
+  margin-top: 6rpx;
+  font-weight: 500;
+}
+
+.checkin-btn.checked-in .checkin-text {
+  color: rgba(255,255,255,0.5);
+}
+
+/* ===== 统计网格 ===== */
+.stats-grid {
+  display: flex;
+  margin: 0 24rpx 20rpx;
+  gap: 16rpx;
+}
+
+.stat-card {
+  flex: 1;
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 24rpx 16rpx;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-value {
+  font-size: 44rpx;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+}
+
+.stat-label {
+  font-size: 24rpx;
+  color: var(--text-muted);
+  margin-top: 8rpx;
+  display: block;
+}
+
+/* ===== 菜单 ===== */
+.menu-section {
+  margin: 0 24rpx;
+  background: #fff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 28rpx 32rpx;
+  border-bottom: 1rpx solid var(--border);
+  transition: background 0.2s;
+}
+
+.menu-item:active {
+  background: var(--bg-page);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-icon {
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}
+
+.menu-content {
+  flex: 1;
+}
+
+.menu-label {
+  font-size: 30rpx;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.menu-badge {
+  background: linear-gradient(135deg, #f5576c, #ff6b6b);
+  color: #fff;
+  font-size: 20rpx;
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+  margin-right: 16rpx;
+}
+
+.menu-arrow {
+  font-size: 44rpx;
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* ===== 退出登录 ===== */
+.logout-section {
+  margin: 24rpx;
+  background: #fff;
+  border-radius: var(--radius-md);
+  text-align: center;
+  padding: 28rpx;
+  box-shadow: var(--shadow-sm);
+}
+
+.logout-section:active {
+  background: var(--bg-page);
+}
+
+.logout-text {
+  font-size: 30rpx;
+  color: var(--red);
+  font-weight: 500;
+}
+
+/* ===== 骨架屏 ===== */
+.skeleton-profile {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 32rpx;
+}

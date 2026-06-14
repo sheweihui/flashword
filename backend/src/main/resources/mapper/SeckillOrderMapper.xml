@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.SeckillOrderMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.SeckillOrder">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="activity_id" property="activityId" />
+        <result column="order_no" property="orderNo" />
+        <result column="status" property="status" />
+        <result column="created_at" property="createdAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, user_id, activity_id, order_no, status, created_at
+    </sql>
+
+    <!-- 插入秒杀订单 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO seckill_order (
+            user_id, activity_id, order_no, status, created_at
+        ) VALUES (
+            #{userId}, #{activityId}, #{orderNo}, 0, NOW()
+        )
+    </insert>
+
+    <!-- 根据用户ID和活动ID查询订单（防止重复购买） -->
+    <select id="selectByUserAndActivity" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM seckill_order
+        WHERE user_id = #{userId} AND activity_id = #{activityId}
+        LIMIT 1
+    </select>
+
+    <!-- 查询处理中超时的订单（status=0 超过指定时间），用于补偿重试 -->
+    <select id="selectPendingBefore" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM seckill_order
+        WHERE status = 0 AND created_at &lt; #{deadline}
+        ORDER BY created_at ASC
+        LIMIT #{limit}
+    </select>
+
+    <!-- 根据订单号查询订单 -->
+    <select id="selectByOrderNo" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM seckill_order
+        WHERE order_no = #{orderNo}
+        LIMIT 1
+    </select>
+
+    <!-- 根据ID更新订单状态 -->
+    <update id="updateStatus">
+        UPDATE seckill_order SET status = #{status} WHERE id = #{id}
+    </update>
+
+    <!-- 根据订单号更新订单状态 -->
+    <update id="updateStatusByOrderNo">
+        UPDATE seckill_order SET status = #{status} WHERE order_no = #{orderNo}
+    </update>
+
+</mapper>

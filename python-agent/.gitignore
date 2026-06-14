@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment
+.env
+
+# Data
+data/*.log
+data/conversations/
+data/chroma_db/
+data/knowledge_docs.json
+data/auth.json
+data/memory.json
+
+# IDE
+.idea/
+.vscode/
+
+# Test artifacts
+chat_response*.json
+chat_response*.bin
+chat_test.json
+upload_test.json
+=1.0.0
+
+# Logs
+logs/
+*.log

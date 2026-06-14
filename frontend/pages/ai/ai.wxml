@@ -1,0 +1,82 @@
+<view class="container">
+  <!-- 渐变头部 -->
+  <view class="page-header page-header-blue">
+    <view class="page-header-top">
+      <text class="page-title">AI 学习助手</text>
+      <view class="header-action" bindtap="clearChat">
+        <text style="margin-right:8rpx">🗑️</text>
+        <text>清空对话</text>
+      </view>
+    </view>
+    <text class="page-subtitle">查单词、学语法、练口语，随时为你解答</text>
+    <view class="page-header-wave">
+      <text style="font-size:80rpx;color:rgba(255,255,255,0.15);letter-spacing:-4rpx">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</text>
+    </view>
+  </view>
+
+  <!-- 聊天区域 -->
+  <scroll-view class="chat-area" scroll-y scroll-into-view="{{toView}}" scroll-with-animation>
+    <view
+      wx:for="{{messages}}"
+      wx:key="id"
+      class="message-item {{item.type}}"
+    >
+      <view class="avatar {{item.type}}">
+        <text class="avatar-icon">{{item.type === 'ai' ? '🤖' : '👤'}}</text>
+      </view>
+      <view class="message-content-wrapper">
+        <view class="message-content {{item.type}}">
+          <text class="msg-text">{{item.content}}</text>
+        </view>
+        <view wx:if="{{item.type === 'user' && item.failed}}" class="retry-btn" bindtap="retryMessage" data-id="{{item.id}}">
+          <text>❗ 发送失败，点击重试</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 加载动画 -->
+    <view wx:if="{{isLoading}}" class="loading-indicator">
+      <view class="loading-avatar">🤖</view>
+      <view class="loading-bubble">
+        <view class="typing-dot"></view>
+        <view class="typing-dot"></view>
+        <view class="typing-dot"></view>
+      </view>
+    </view>
+
+    <view id="bottom"></view>
+  </scroll-view>
+
+  <!-- 快捷操作 -->
+  <view class="quick-actions" wx:if="{{messages.length <= 2 && !isLoading}}">
+    <view class="quick-actions-title">💡 试试这些功能</view>
+    <view class="quick-actions-grid">
+      <view
+        class="action-item"
+        wx:for="{{['帮我查一个单词', '推荐今天学习的单词', '测试我的词汇量', '解释这个句子']}}"
+        wx:key="index"
+        bindtap="quickAction"
+        data-action="{{item}}"
+      >
+        <text class="action-text">{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 输入区域 -->
+  <view class="input-area {{isLoading ? 'input-disabled' : ''}}">
+    <view class="input-wrapper">
+      <input
+        class="input-box"
+        placeholder="输入你的问题..."
+        value="{{inputText}}"
+        bindinput="onInput"
+        bindconfirm="sendMessage"
+        disabled="{{isLoading}}"
+      />
+    </view>
+    <view class="send-btn {{inputText.trim() ? 'active' : ''}}" bindtap="sendMessage">
+      <text>{{isLoading ? '...' : '发送'}}</text>
+    </view>
+  </view>
+</view>

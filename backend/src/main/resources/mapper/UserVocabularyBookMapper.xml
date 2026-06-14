@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.UserVocabularyBookMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.UserVocabularyBook">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="book_name" property="bookName" />
+        <result column="description" property="description" />
+        <result column="cover_image" property="coverImage" />
+        <result column="word_count" property="wordCount" />
+        <result column="is_public" property="isPublic" />
+        <result column="source_type" property="sourceType" />
+        <result column="source_store_book_id" property="sourceStoreBookId" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, user_id, book_name, description, cover_image, word_count, 
+        is_public, source_type, source_store_book_id, created_at, updated_at
+    </sql>
+
+    <!-- 插入用户单词书 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user_vocabulary_book (
+            user_id, book_name, description, cover_image, word_count,
+            is_public, source_type, source_store_book_id, created_at, updated_at
+        ) VALUES (
+            #{userId}, #{bookName}, #{description}, #{coverImage}, #{wordCount},
+            #{isPublic}, #{sourceType}, #{sourceStoreBookId}, NOW(), NOW()
+        )
+    </insert>
+
+    <!-- 根据ID查询用户单词书 -->
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM user_vocabulary_book
+        WHERE id = #{id}
+    </select>
+
+    <!-- 根据用户ID查询单词书列表 -->
+    <select id="selectByUserId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM user_vocabulary_book
+        WHERE user_id = #{userId}
+        ORDER BY created_at DESC
+    </select>
+
+    <!-- 更新用户单词书 -->
+    <update id="update">
+        UPDATE user_vocabulary_book
+        <set>
+            <if test="bookName != null">book_name = #{bookName},</if>
+            <if test="description != null">description = #{description},</if>
+            <if test="coverImage != null">cover_image = #{coverImage},</if>
+            <if test="wordCount != null">word_count = #{wordCount},</if>
+            <if test="isPublic != null">is_public = #{isPublic},</if>
+            <if test="sourceType != null">source_type = #{sourceType},</if>
+            <if test="sourceStoreBookId != null">source_store_book_id = #{sourceStoreBookId},</if>
+            updated_at = NOW()
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <!-- 删除用户单词书 -->
+    <delete id="deleteById">
+        DELETE FROM user_vocabulary_book WHERE id = #{id}
+    </delete>
+
+    <!-- 更新单词数量 -->
+    <update id="updateWordCount">
+        UPDATE user_vocabulary_book
+        SET word_count = #{wordCount},
+            updated_at = NOW()
+        WHERE id = #{id}
+    </update>
+
+</mapper>

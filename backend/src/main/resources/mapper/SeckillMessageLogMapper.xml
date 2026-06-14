@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.SeckillMessageLogMapper">
+
+    <insert id="insert" parameterType="org.example.entity.SeckillMessageLog">
+        INSERT INTO seckill_message_log (message_id, message_content, status)
+        VALUES (#{messageId}, #{messageContent}, #{status})
+    </insert>
+
+    <select id="selectByMessageId" resultType="org.example.entity.SeckillMessageLog">
+        SELECT * FROM seckill_message_log WHERE message_id = #{messageId}
+    </select>
+
+    <select id="selectByStatus" resultType="org.example.entity.SeckillMessageLog">
+        SELECT * FROM seckill_message_log
+        WHERE status = #{status} AND retry_count &lt; #{maxRetry}
+        ORDER BY created_at ASC
+        LIMIT 50
+    </select>
+
+    <update id="updateStatus">
+        UPDATE seckill_message_log SET status = #{status} WHERE message_id = #{messageId}
+    </update>
+
+    <update id="incrementRetryCount">
+        UPDATE seckill_message_log SET retry_count = retry_count + 1 WHERE message_id = #{messageId}
+    </update>
+
+    <update id="setErrorMessage">
+        UPDATE seckill_message_log SET error_message = #{errorMessage}, status = 2 WHERE message_id = #{messageId}
+    </update>
+
+</mapper>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.PublicVocabularyBookMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.PublicVocabularyBook">
+        <id column="id" property="id" />
+        <result column="book_name" property="bookName" />
+        <result column="description" property="description" />
+        <result column="cover_image" property="coverImage" />
+        <result column="category" property="category" />
+        <result column="difficulty" property="difficulty" />
+        <result column="word_count" property="wordCount" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, book_name, description, cover_image, category, difficulty, 
+        word_count, created_at, updated_at
+    </sql>
+
+    <!-- 插入公共单词书 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO public_vocabulary_book (
+            book_name, description, cover_image, category, difficulty, 
+            word_count, created_at, updated_at
+        ) VALUES (
+            #{bookName}, #{description}, #{coverImage}, #{category}, #{difficulty}, 
+            #{wordCount}, NOW(), NOW()
+        )
+    </insert>
+
+    <!-- 根据ID查询 -->
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_vocabulary_book
+        WHERE id = #{id}
+    </select>
+
+    <!-- 查询所有上架的单词书 -->
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_vocabulary_book
+        ORDER BY created_at DESC
+    </select>
+
+    <!-- 根据分类查询 -->
+    <select id="selectByCategory" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_vocabulary_book
+        WHERE category = #{category}
+        ORDER BY created_at DESC
+    </select>
+
+    <!-- 根据难度查询 -->
+    <select id="selectByDifficulty" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM public_vocabulary_book
+        WHERE difficulty = #{difficulty}
+        ORDER BY created_at DESC
+    </select>
+
+    <!-- 更新单词数量 -->
+    <update id="updateWordCount">
+        UPDATE public_vocabulary_book
+        SET word_count = #{wordCount},
+            updated_at = NOW()
+        WHERE id = #{id}
+    </update>
+
+</mapper>

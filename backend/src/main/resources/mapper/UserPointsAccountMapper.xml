@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.UserPointsAccountMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.UserPointsAccount">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="balance" property="balance" />
+        <result column="total_earned" property="totalEarned" />
+        <result column="total_spent" property="totalSpent" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, user_id, balance, total_earned, total_spent, created_at, updated_at
+    </sql>
+
+    <!-- 插入积分账户 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user_points_account (
+            user_id, balance, total_earned, total_spent, created_at, updated_at
+        ) VALUES (
+            #{userId}, #{balance}, #{totalEarned}, #{totalSpent}, NOW(), NOW()
+        )
+    </insert>
+
+    <!-- 根据用户ID查询 -->
+    <select id="selectByUserId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM user_points_account
+        WHERE user_id = #{userId}
+    </select>
+
+    <!-- 更新积分余额 -->
+    <update id="updateBalance">
+        UPDATE user_points_account
+        SET balance = #{balance},
+            updated_at = NOW()
+        WHERE user_id = #{userId}
+    </update>
+
+    <!-- 增加积分 -->
+    <update id="addPoints">
+        UPDATE user_points_account
+        SET balance = balance + #{points},
+            total_earned = total_earned + #{points},
+            updated_at = NOW()
+        WHERE user_id = #{userId}
+    </update>
+
+    <!-- 扣除积分 -->
+    <update id="deductPoints">
+        UPDATE user_points_account
+        SET balance = balance - #{points},
+            total_spent = total_spent + #{points},
+            updated_at = NOW()
+        WHERE user_id = #{userId}
+    </update>
+
+</mapper>

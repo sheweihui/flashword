@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.UserMapper">
+
+    <!-- 查询所有用户 -->
+    <select id="selectAll" resultType="org.example.entity.User">
+        SELECT * FROM user ORDER BY created_at DESC
+    </select>
+
+    <!-- 根据ID查询用户 -->
+    <select id="selectById" resultType="org.example.entity.User">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+
+    <!-- 根据用户名查询用户 -->
+    <select id="selectByUsername" resultType="org.example.entity.User">
+        SELECT * FROM user WHERE username = #{username}
+    </select>
+
+    <!-- 插入用户 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user (username, password, nickname, avatar, created_at, updated_at)
+        VALUES (#{username}, #{password}, #{nickname}, #{avatar}, NOW(), NOW())
+    </insert>
+
+    <!-- 更新用户 -->
+    <update id="update">
+        UPDATE user
+        <set>
+            <if test="nickname != null">nickname = #{nickname},</if>
+            <if test="avatar != null">avatar = #{avatar},</if>
+            updated_at = NOW()
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <!-- 删除用户 -->
+    <delete id="deleteById">
+        DELETE FROM user WHERE id = #{id}
+    </delete>
+
+    <!-- 查询用户已购买的商品ID列表 -->
+    <select id="selectPurchasedProducts" resultType="java.lang.Long">
+        SELECT product_id
+        FROM store_purchase_record
+        WHERE user_id = #{userId}
+    </select>
+
+</mapper>

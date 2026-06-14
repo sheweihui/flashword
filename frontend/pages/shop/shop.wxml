@@ -1,0 +1,371 @@
+<view class="container">
+  <view class="page-header page-header-pink">
+    <view class="page-header-top">
+      <text class="page-title">积分商店</text>
+      <view class="header-right">
+        <view class="points-info" bindtap="refreshAll">
+          <text class="points-icon">⭐</text>
+          <text class="points-balance">{{pointsBalance.balance}}</text>
+        </view>
+        <view class="checkin-btn {{checkinInfo.checkedIn ? 'checked-in' : ''}}" bindtap="checkin">
+          <text class="checkin-icon">{{checkinInfo.checkedIn ? '✅' : '📅'}}</text>
+          <text class="checkin-text">{{checkinInfo.checkedIn ? '已签到' : '签到'}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="page-header-wave">
+      <text style="font-size:80rpx;color:rgba(255,255,255,0.12);letter-spacing:-4rpx">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</text>
+    </view>
+  </view>
+
+  <view class="search-bar">
+    <text class="search-icon">🔍</text>
+    <input 
+      class="search-input" 
+      placeholder="搜索单词书..." 
+      value="{{searchKeyword}}"
+      bindinput="onSearchInput"
+    />
+  </view>
+
+  <view class="flash-sale-section" wx:if="{{flashSaleList.length > 0}}">
+    <view class="flash-sale-header">
+      <view class="flash-sale-title">
+        <text class="flash-sale-icon">⚡</text>
+        <text class="flash-sale-text">限时秒杀</text>
+      </view>
+      <view class="flash-sale-countdown">
+        <text class="countdown-label">距结束</text>
+        <view class="countdown-box">
+          <text class="countdown-num">{{flashSaleCountdown.hours}}</text>
+        </view>
+        <text class="countdown-separator">:</text>
+        <view class="countdown-box">
+          <text class="countdown-num">{{flashSaleCountdown.minutes}}</text>
+        </view>
+        <text class="countdown-separator">:</text>
+        <view class="countdown-box">
+          <text class="countdown-num">{{flashSaleCountdown.seconds}}</text>
+        </view>
+      </view>
+    </view>
+    <scroll-view class="flash-sale-scroll" scroll-x>
+      <view class="flash-sale-list">
+        <view 
+          wx:for="{{flashSaleList}}" 
+          wx:key="id"
+          class="flash-sale-item {{item.status === 'ended' || item.status === 'soldout' ? 'disabled' : ''}}"
+          bindtap="showFlashSaleDetail"
+          data-item="{{item}}"
+        >
+          <view class="flash-sale-cover">
+            <image wx:if="{{item.coverImage}}" src="{{item.coverImage}}" mode="aspectFill" />
+            <text wx:else class="cover-icon">📖</text>
+            <view class="flash-sale-badge {{item.status}}">
+              <text wx:if="{{item.status === 'ongoing'}}">进行中</text>
+              <text wx:elif="{{item.status === 'upcoming'}}">即将开始</text>
+              <text wx:elif="{{item.status === 'ended'}}">已结束</text>
+              <text wx:else>已售罄</text>
+            </view>
+          </view>
+          <view class="flash-sale-info">
+            <text class="flash-sale-name">{{item.bookName}}</text>
+            <view class="flash-sale-price-row">
+              <text class="flash-price-label">秒杀价</text>
+              <text class="flash-price-value">{{item.flashPrice}}</text>
+              <text class="flash-price-unit">积分</text>
+            </view>
+            <text class="flash-original-price">原价 {{item.originalPrice}} 积分</text>
+            <view class="flash-sale-progress">
+              <view class="progress-bar">
+                <view class="progress-fill" style="width: {{Math.min(item.soldCount / item.stock * 100, 100)}}%"></view>
+              </view>
+              <text class="progress-text">已抢{{item.soldCount}}件</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <scroll-view class="category-scroll" scroll-x>
+    <view class="category-list">
+      <view 
+        wx:for="{{categories}}" 
+        wx:key="id"
+        class="category-item {{activeCategory === item.id ? 'active' : ''}}"
+        bindtap="switchCategory"
+        data-category-id="{{item.id}}"
+      >
+        {{item.name}}
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="sort-bar">
+    <view class="sort-label">排序:</view>
+    <view class="sort-options">
+      <view 
+        wx:for="{{sortOptions}}" 
+        wx:key="id"
+        class="sort-item {{sortBy === item.id ? 'active' : ''}}"
+        bindtap="switchSort"
+        data-sort-id="{{item.id}}"
+      >
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+
+  <scroll-view class="book-list" scroll-y>
+    <view wx:if="{{loading}}" class="loading">
+      <view wx:for="{{3}}" wx:key="index" class="skeleton-card">
+        <view class="skeleton-cover"></view>
+        <view class="skeleton-info">
+          <view class="skeleton-line medium"></view>
+          <view class="skeleton-line short"></view>
+          <view class="skeleton-line"></view>
+        </view>
+      </view>
+    </view>
+    <view wx:elif="{{filteredBooks.length === 0}}" class="empty-state">
+      <text class="empty-icon">📚</text>
+      <text class="empty-title">暂无单词书</text>
+    </view>
+    <view 
+      wx:for="{{filteredBooks}}" 
+      wx:key="id"
+      class="book-card"
+      bindtap="showBookDetail"
+      data-book="{{item}}"
+    >
+      <view class="book-cover">
+        <image wx:if="{{item.coverImage}}" src="{{item.coverImage}}" mode="aspectFill" />
+        <text wx:else class="cover-icon">📖</text>
+      </view>
+      <view class="book-info">
+        <view class="book-header">
+          <text class="book-name">{{item.bookName}}</text>
+          <view class="book-tags">
+            <text wx:if="{{item.isHot}}" class="tag hot">热门</text>
+            <text wx:if="{{item.isNew}}" class="tag new">新品</text>
+            <text wx:if="{{item.isRecommended}}" class="tag recommend">推荐</text>
+          </view>
+        </view>
+        <text class="book-desc">{{item.description}}</text>
+        <view class="book-meta">
+          <text class="meta-item">📝 {{item.wordCount}}词</text>
+          <text class="meta-item">⭐ 难度{{item.difficulty}}</text>
+        </view>
+        <view class="book-price-row">
+          <view class="price-current">
+            <text class="price-label">¥</text>
+            <text class="price-value">{{item.price}}</text>
+            <text class="price-unit">积分</text>
+          </view>
+          <text wx:if="{{item.originalPrice}}" class="price-original">{{item.originalPrice}}积分</text>
+          <text wx:if="{{item.discount < 100}}" class="discount-tag">{{item.discount}}折</text>
+        </view>
+      </view>
+      <view class="book-action">
+        <view 
+          class="buy-btn {{item.isPurchased ? 'purchased' : ''}}" 
+          bindtap="buyBook"
+          data-book="{{item}}"
+        >
+          {{item.isPurchased ? '已拥有' : '购买'}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="modal-overlay" wx:if="{{showDetailModal}}" bindtap="closeDetailModal">
+    <view class="modal-content detail-modal" catchtap>
+      <view class="modal-handle"></view>
+      <view class="modal-header">
+        <text class="modal-title">单词书详情</text>
+        <view class="modal-close" bindtap="closeDetailModal">×</view>
+      </view>
+      <scroll-view class="modal-body" scroll-y>
+        <view class="detail-cover">
+          <image wx:if="{{selectedBook.coverImage}}" src="{{selectedBook.coverImage}}" mode="aspectFill" />
+          <text wx:else class="cover-icon-lg">📖</text>
+        </view>
+        <view class="detail-info">
+          <view class="detail-header">
+            <text class="detail-name">{{selectedBook.bookName}}</text>
+            <view class="detail-tags">
+              <text wx:if="{{selectedBook.isHot}}" class="tag hot">热门</text>
+              <text wx:if="{{selectedBook.isNew}}" class="tag new">新品</text>
+              <text wx:if="{{selectedBook.isRecommended}}" class="tag recommend">推荐</text>
+            </view>
+          </view>
+          <text class="detail-desc">{{selectedBook.description}}</text>
+          <view class="detail-meta">
+            <view class="meta-row">
+              <text class="meta-label">单词数量</text>
+              <text class="meta-value">{{selectedBook.wordCount}} 词</text>
+            </view>
+            <view class="meta-row">
+              <text class="meta-label">难度等级</text>
+              <text class="meta-value">
+                {{selectedBook.difficulty === 1 ? '初级' : selectedBook.difficulty === 2 ? '中级' : '高级'}}
+              </text>
+            </view>
+            <view class="meta-row">
+              <text class="meta-label">分类</text>
+              <text class="meta-value">{{selectedBook.category}}</text>
+            </view>
+          </view>
+          <view class="detail-price">
+            <view class="price-info">
+              <text class="price-label">价格:</text>
+              <view class="price-current-lg">
+                <text class="price-symbol">¥</text>
+                <text class="price-num">{{selectedBook.price}}</text>
+                <text class="price-unit">积分</text>
+              </view>
+              <text wx:if="{{selectedBook.originalPrice}}" class="price-original-lg">{{selectedBook.originalPrice}}积分</text>
+            </view>
+            <text wx:if="{{selectedBook.discount < 100}}" class="discount-badge">{{selectedBook.discount}}折优惠</text>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="modal-footer">
+        <view class="btn btn-ghost btn-block" catchtap="closeDetailModal">关闭</view>
+        <view class="btn btn-outline btn-block" bindtap="previewBook" data-book="{{selectedBook}}">预览单词</view>
+        <view
+          class="btn btn-purple btn-block {{selectedBook.isPurchased ? 'btn-ghost' : ''}}"
+          catchtap="buyBook"
+          data-book="{{selectedBook}}"
+        >
+          {{selectedBook.isPurchased ? '已拥有' : '立即购买'}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="modal-overlay" wx:if="{{showOrderModal}}" bindtap="closeOrderModal">
+    <view class="modal-content order-modal" catchtap>
+      <view class="modal-handle"></view>
+      <view class="modal-header">
+        <text class="modal-title">确认购买</text>
+        <view class="modal-close" bindtap="closeOrderModal">×</view>
+      </view>
+      <view class="modal-body">
+        <view class="order-book">
+          <text class="order-book-name">{{orderBook.bookName}}</text>
+          <view class="order-price">
+            <text class="price-symbol">¥</text>
+            <text class="price-num-lg">{{orderBook.price}}</text>
+            <text class="price-unit">积分</text>
+          </view>
+        </view>
+        <view class="order-info">
+          <view class="info-row">
+            <text class="info-label">当前积分</text>
+            <text class="info-value">{{pointsBalance.balance}} 积分</text>
+          </view>
+          <view class="info-row">
+            <text class="info-label">购买后剩余</text>
+            <text class="info-value highlight">{{pointsBalance.balance - orderBook.price}} 积分</text>
+          </view>
+        </view>
+      </view>
+      <view class="modal-footer">
+        <view class="btn btn-ghost btn-block" catchtap="closeOrderModal">取消</view>
+        <view
+          class="btn btn-purple btn-block {{pointsBalance.balance < orderBook.price ? 'btn-ghost' : ''}}"
+          catchtap="submitOrder"
+        >
+          确认购买
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="modal-overlay" wx:if="{{showFlashSaleModal}}" bindtap="closeFlashSaleModal">
+    <view class="modal-content flash-sale-modal" catchtap>
+      <view class="modal-handle"></view>
+      <view class="modal-header flash-header">
+        <text class="modal-title">⚡ 秒杀详情</text>
+        <view class="modal-close" bindtap="closeFlashSaleModal">×</view>
+      </view>
+      <scroll-view class="modal-body" scroll-y>
+        <view class="flash-detail-cover">
+          <image wx:if="{{currentFlashSale.coverImage}}" src="{{currentFlashSale.coverImage}}" mode="aspectFill" />
+          <text wx:else class="cover-icon-lg">📖</text>
+        </view>
+        <view class="flash-detail-info">
+          <view class="flash-detail-header">
+            <text class="flash-detail-name">{{currentFlashSale.bookName}}</text>
+            <view class="flash-detail-badge {{currentFlashSale.currentStatus}}">
+              <text wx:if="{{currentFlashSale.currentStatus === 'ongoing'}}">🔥 进行中</text>
+              <text wx:elif="{{currentFlashSale.currentStatus === 'upcoming'}}">⏰ 即将开始</text>
+              <text wx:elif="{{currentFlashSale.currentStatus === 'ended'}}">已结束</text>
+              <text wx:else>已售罄</text>
+            </view>
+          </view>
+          <text class="flash-detail-desc">{{currentFlashSale.description}}</text>
+          <view class="flash-detail-meta">
+            <view class="meta-row">
+              <text class="meta-label">单词数量</text>
+              <text class="meta-value">{{currentFlashSale.wordCount}} 词</text>
+            </view>
+            <view class="meta-row">
+              <text class="meta-label">难度等级</text>
+              <text class="meta-value">
+                {{currentFlashSale.difficulty === 1 ? '初级' : currentFlashSale.difficulty === 2 ? '中级' : '高级'}}
+              </text>
+            </view>
+            <view class="meta-row">
+              <text class="meta-label">库存数量</text>
+              <text class="meta-value">{{currentFlashSale.stock - currentFlashSale.soldCount}} 件</text>
+            </view>
+          </view>
+          <view class="flash-detail-price">
+            <view class="flash-price-info">
+              <text class="flash-price-tag">秒杀价</text>
+              <view class="flash-price-large">
+                <text class="flash-price-symbol">¥</text>
+                <text class="flash-price-num">{{currentFlashSale.flashPrice}}</text>
+                <text class="flash-price-unit">积分</text>
+              </view>
+            </view>
+            <view class="flash-original-row">
+              <text class="flash-original-label">原价</text>
+              <text class="flash-original-value">{{currentFlashSale.originalPrice}} 积分</text>
+              <text class="flash-discount">省{{currentFlashSale.originalPrice - currentFlashSale.flashPrice}}积分</text>
+            </view>
+          </view>
+          <view class="flash-progress-section">
+            <view class="flash-progress-bar">
+              <view class="flash-progress-fill" style="width: {{currentFlashSale.soldCount / currentFlashSale.stock * 100}}%"></view>
+            </view>
+            <view class="flash-progress-info">
+              <text>已抢 {{currentFlashSale.soldCount}} 件</text>
+              <text>剩余 {{currentFlashSale.stock - currentFlashSale.soldCount}} 件</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+      <view class="modal-footer">
+        <view class="btn btn-ghost btn-block" catchtap="closeFlashSaleModal">关闭</view>
+        <view
+          class="btn btn-block {{currentFlashSale.currentStatus === 'ongoing' && pointsBalance.balance >= currentFlashSale.flashPrice ? 'btn-danger' : 'btn-ghost'}}"
+          catchtap="purchaseFlashSale"
+        >
+          <text wx:if="{{currentFlashSale.currentStatus === 'upcoming'}}">活动未开始</text>
+          <text wx:elif="{{currentFlashSale.currentStatus === 'ended'}}">活动已结束</text>
+          <text wx:elif="{{currentFlashSale.currentStatus === 'soldout'}}">已售罄</text>
+          <text wx:elif="{{pointsBalance.balance < currentFlashSale.flashPrice}}">积分不足</text>
+          <text wx:else>立即抢购</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="refresh-btn" bindtap="refreshAll">
+    <text class="refresh-icon">🔄</text>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="container">
+  <!-- 渐变头部 -->
+  <view class="page-header page-header-purple">
+    <view class="page-header-top">
+      <view class="header-back" bindtap="goBack">
+        <text>←</text>
+      </view>
+      <view class="header-info">
+        <text class="book-name">{{ bookName }}</text>
+        <text class="word-count">{{ filteredWords.length }} 个单词</text>
+      </view>
+    </view>
+    <view class="page-header-wave">
+      <text style="font-size:80rpx;color:rgba(255,255,255,0.12);letter-spacing:-4rpx">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</text>
+    </view>
+  </view>
+
+  <!-- 搜索栏 -->
+  <view class="search-bar">
+    <input class="search-input" placeholder="搜索单词..." value="{{ searchKeyword }}" bindinput="onSearchInput" />
+    <text class="search-icon">🔍</text>
+  </view>
+
+  <!-- 单词列表 -->
+  <scroll-view class="word-list" scroll-y>
+    <view class="word-item" wx:for="{{ filteredWords }}" wx:key="id">
+      <view class="word-header">
+        <text class="word-text">{{ item.wordText }}</text>
+        <text class="phonetic">{{ item.phonetic }}</text>
+        <text class="word-part">{{ item.partOfSpeech }}</text>
+      </view>
+      <text class="word-definition">{{ item.definition }}</text>
+      <view class="word-example" wx:if="{{ item.exampleSentence }}">
+        <text class="example-sentence">{{ item.exampleSentence }}</text>
+        <text class="example-translation">{{ item.exampleTranslation }}</text>
+      </view>
+    </view>
+
+    <view class="empty-state" wx:if="{{ !isLoading && filteredWords.length === 0 }}">
+      <text class="empty-icon">📚</text>
+      <text class="empty-title">{{ searchKeyword ? '未找到匹配的单词' : '单词书还没有单词' }}</text>
+    </view>
+
+    <view class="empty-state" wx:if="{{ isLoading }}">
+      <text class="empty-icon">📖</text>
+      <text class="empty-title">加载中...</text>
+    </view>
+  </scroll-view>
+</view>

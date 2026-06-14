@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.UserBookWordMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.UserBookWord">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="book_id" property="bookId" />
+        <result column="word_id" property="wordId" />
+        <result column="mastered" property="mastered" />
+        <result column="review_count" property="reviewCount" />
+        <result column="last_review_time" property="lastReviewTime" />
+        <result column="difficulty" property="difficulty" />
+        <result column="priority" property="priority" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, user_id, book_id, word_id, mastered, review_count, 
+        last_review_time, difficulty, priority, created_at, updated_at
+    </sql>
+
+    <!-- 插入关联记录 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user_book_word (
+            user_id, book_id, word_id, mastered, review_count, 
+            last_review_time, difficulty, priority, created_at, updated_at
+        ) VALUES (
+            #{userId}, #{bookId}, #{wordId}, #{mastered}, #{reviewCount}, 
+            #{lastReviewTime}, #{difficulty}, #{priority}, NOW(), NOW()
+        )
+    </insert>
+
+    <!-- 根据ID查询 -->
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM user_book_word
+        WHERE id = #{id}
+    </select>
+
+    <!-- 根据单词书ID查询单词列表 -->
+    <select id="selectByBookId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM user_book_word
+        WHERE book_id = #{bookId}
+        ORDER BY priority ASC, created_at ASC
+    </select>
+
+    <!-- 根据用户ID和单词书ID查询 -->
+    <select id="selectByUserAndBook" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM user_book_word
+        WHERE user_id = #{userId} AND book_id = #{bookId}
+        ORDER BY priority ASC, created_at ASC
+    </select>
+
+    <!-- 更新掌握状态 -->
+    <update id="updateMastered">
+        UPDATE user_book_word
+        SET mastered = #{mastered},
+            updated_at = NOW()
+        WHERE id = #{id}
+    </update>
+
+    <!-- 更新复习次数 -->
+    <update id="updateReviewCount">
+        UPDATE user_book_word
+        SET review_count = #{reviewCount},
+            last_review_time = NOW(),
+            updated_at = NOW()
+        WHERE id = #{id}
+    </update>
+
+    <!-- 删除关联记录 -->
+    <delete id="deleteById">
+        DELETE FROM user_book_word WHERE id = #{id}
+    </delete>
+
+    <!-- 批量插入 -->
+    <insert id="batchInsert">
+        INSERT INTO user_book_word (
+            user_id, book_id, word_id, mastered, review_count, 
+            last_review_time, difficulty, priority, created_at, updated_at
+        ) VALUES
+        <foreach collection="list" item="item" separator=",">
+            (
+                #{item.userId}, #{item.bookId}, #{item.wordId}, #{item.mastered}, #{item.reviewCount}, 
+                #{item.lastReviewTime}, #{item.difficulty}, #{item.priority}, NOW(), NOW()
+            )
+        </foreach>
+    </insert>
+
+    <!-- 统计单词书的单词数量 -->
+    <select id="countByBookId" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM user_book_word WHERE book_id = #{bookId}
+    </select>
+
+    <!-- 统计用户所有单词总数 -->
+    <select id="countByUserId" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM user_book_word WHERE user_id = #{userId}
+    </select>
+
+    <!-- 统计用户已掌握的单词数 -->
+    <select id="countMasteredByUserId" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM user_book_word WHERE user_id = #{userId} AND mastered = 1
+    </select>
+
+    <!-- 统计用户今日复习的单词数 -->
+    <select id="countReviewedTodayByUserId" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM user_book_word
+        WHERE user_id = #{userId}
+          AND last_review_time >= CURDATE()
+    </select>
+
+    <!-- 统计用户今日新学单词数 -->
+    <select id="countNewTodayByUserId" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM user_book_word
+        WHERE user_id = #{userId}
+          AND created_at >= CURDATE()
+    </select>
+
+</mapper>

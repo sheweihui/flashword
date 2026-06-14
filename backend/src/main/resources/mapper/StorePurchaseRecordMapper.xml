@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.StorePurchaseRecordMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.StorePurchaseRecord">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="product_id" property="productId" />
+        <result column="price_paid" property="pricePaid" />
+        <result column="purchase_type" property="purchaseType" />
+        <result column="user_book_id" property="userBookId" />
+        <result column="created_at" property="createdAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, user_id, product_id, price_paid, purchase_type, user_book_id, created_at
+    </sql>
+
+    <!-- 插入购买记录 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO store_purchase_record (
+            user_id, product_id, price_paid, purchase_type, user_book_id, created_at
+        ) VALUES (
+            #{userId}, #{productId}, #{pricePaid}, #{purchaseType}, #{userBookId}, NOW()
+        )
+    </insert>
+
+    <!-- 根据ID查询 -->
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_purchase_record
+        WHERE id = #{id}
+    </select>
+
+    <!-- 根据用户ID查询购买记录 -->
+    <select id="selectByUserId" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_purchase_record
+        WHERE user_id = #{userId}
+        ORDER BY created_at DESC
+    </select>
+
+    <!-- 检查用户是否已购买某商品 -->
+    <select id="selectByUserAndProduct" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_purchase_record
+        WHERE user_id = #{userId} AND product_id = #{productId}
+        LIMIT 1
+    </select>
+
+</mapper>

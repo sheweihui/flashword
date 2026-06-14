@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.StoreProductMapper">
+
+    <!-- 结果映射 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.StoreProduct">
+        <id column="id" property="id" />
+        <result column="product_name" property="productName" />
+        <result column="product_type" property="productType" />
+        <result column="reference_id" property="referenceId" />
+        <result column="description" property="description" />
+        <result column="cover_image" property="coverImage" />
+        <result column="price" property="price" />
+        <result column="original_price" property="originalPrice" />
+        <result column="is_hot" property="isHot" />
+        <result column="is_new" property="isNew" />
+        <result column="is_recommended" property="isRecommended" />
+        <result column="sort_order" property="sortOrder" />
+        <result column="status" property="status" />
+        <result column="stock" property="stock" />
+        <result column="sales_count" property="salesCount" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+    </resultMap>
+
+    <!-- 基础列 -->
+    <sql id="Base_Column_List">
+        id, product_name, product_type, reference_id, description, cover_image, 
+        price, original_price, is_hot, is_new, is_recommended, sort_order, 
+        status, stock, sales_count, created_at, updated_at
+    </sql>
+
+    <!-- 插入商品 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO store_product (
+            product_name, product_type, reference_id, description, cover_image, 
+            price, original_price, is_hot, is_new, is_recommended, sort_order, 
+            status, stock, sales_count, created_at, updated_at
+        ) VALUES (
+            #{productName}, #{productType}, #{referenceId}, #{description}, #{coverImage}, 
+            #{price}, #{originalPrice}, #{isHot}, #{isNew}, #{isRecommended}, #{sortOrder}, 
+            #{status}, #{stock}, #{salesCount}, NOW(), NOW()
+        )
+    </insert>
+
+    <!-- 根据ID查询 -->
+    <select id="selectById" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_product
+        WHERE id = #{id}
+    </select>
+
+    <!-- 查询所有上架商品 -->
+    <select id="selectAllActive" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_product
+        WHERE status = 1
+        ORDER BY sort_order DESC, created_at DESC
+    </select>
+
+    <!-- 根据商品类型查询 -->
+    <select id="selectByType" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_product
+        WHERE product_type = #{productType} AND status = 1
+        ORDER BY sort_order DESC, created_at DESC
+    </select>
+
+    <!-- 查询热门商品 -->
+    <select id="selectHotProducts" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_product
+        WHERE is_hot = 1 AND status = 1
+        ORDER BY sales_count DESC, sort_order DESC
+        LIMIT 10
+    </select>
+
+    <!-- 查询新品 -->
+    <select id="selectNewProducts" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_product
+        WHERE is_new = 1 AND status = 1
+        ORDER BY created_at DESC
+        LIMIT 10
+    </select>
+
+    <!-- 查询推荐商品 -->
+    <select id="selectRecommended" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List" />
+        FROM store_product
+        WHERE is_recommended = 1 AND status = 1
+        ORDER BY sort_order DESC, created_at DESC
+        LIMIT 10
+    </select>
+
+    <!-- 更新商品 -->
+    <update id="update">
+        UPDATE store_product
+        <set>
+            <if test="productName != null">product_name = #{productName},</if>
+            <if test="productType != null">product_type = #{productType},</if>
+            <if test="referenceId != null">reference_id = #{referenceId},</if>
+            <if test="description != null">description = #{description},</if>
+            <if test="coverImage != null">cover_image = #{coverImage},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="originalPrice != null">original_price = #{originalPrice},</if>
+            <if test="isHot != null">is_hot = #{isHot},</if>
+            <if test="isNew != null">is_new = #{isNew},</if>
+            <if test="isRecommended != null">is_recommended = #{isRecommended},</if>
+            <if test="sortOrder != null">sort_order = #{sortOrder},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="stock != null">stock = #{stock},</if>
+            <if test="salesCount != null">sales_count = #{salesCount},</if>
+            updated_at = NOW()
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <!-- 更新销售数量 -->
+    <update id="updateSalesCount">
+        UPDATE store_product
+        SET sales_count = #{salesCount},
+            updated_at = NOW()
+        WHERE id = #{id}
+    </update>
+
+    <!-- 根据单词书ID查询单词列表 -->
+    <select id="selectWords" resultType="org.example.entity.PublicWord">
+        SELECT pw.*
+        FROM public_word pw
+        INNER JOIN public_book_word pbw ON pw.id = pbw.word_id
+        WHERE pbw.book_id = #{id}
+        ORDER BY pbw.sort_order ASC
+    </select>
+
+    <!-- 统计单词书的单词数量 -->
+    <select id="countWordsByBookId" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM public_book_word
+        WHERE book_id = #{id}
+    </select>
+
+    <!-- 条件分页查询（支持分类/难度过滤 + 排序 + 分页） -->
+    <select id="selectByFilter" resultMap="BaseResultMap">
+        SELECT sp.* FROM store_product sp
+        WHERE sp.status = 1
+        <if test="category != null">
+            AND EXISTS (
+                SELECT 1 FROM public_vocabulary_book pvb
+                WHERE pvb.id = sp.reference_id AND pvb.category = #{category}
+            )
+        </if>
+        <if test="difficulty != null">
+            AND EXISTS (
+                SELECT 1 FROM public_vocabulary_book pvb
+                WHERE pvb.id = sp.reference_id AND pvb.difficulty = #{difficulty}
+            )
+        </if>
+        ORDER BY ${orderBy}
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+
+    <!-- 条件计数 -->
+    <select id="countByFilter" resultType="java.lang.Long">
+        SELECT COUNT(*) FROM store_product sp
+        WHERE sp.status = 1
+        <if test="category != null">
+            AND EXISTS (
+                SELECT 1 FROM public_vocabulary_book pvb
+                WHERE pvb.id = sp.reference_id AND pvb.category = #{category}
+            )
+        </if>
+        <if test="difficulty != null">
+            AND EXISTS (
+                SELECT 1 FROM public_vocabulary_book pvb
+                WHERE pvb.id = sp.reference_id AND pvb.difficulty = #{difficulty}
+            )
+        </if>
+    </select>
+
+</mapper>

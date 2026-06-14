@@ -1,0 +1,128 @@
+.container {
+  min-height: 100vh;
+  background: var(--bg-page);
+}
+
+/* ===== 头部 ===== */
+.header-back {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 36rpx;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.header-info {
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.book-name {
+  font-size: 36rpx;
+  font-weight: 700;
+  display: block;
+}
+
+.word-count {
+  font-size: 24rpx;
+  opacity: 0.8;
+  margin-top: 4rpx;
+  display: block;
+}
+
+/* ===== 搜索 ===== */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  margin: -16rpx 20rpx 20rpx;
+  padding: 18rpx 28rpx;
+  border-radius: 50rpx;
+  box-shadow: var(--shadow-md);
+  border: 1rpx solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 5;
+}
+
+.search-input {
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.search-icon {
+  font-size: 30rpx;
+  color: var(--text-muted);
+}
+
+/* ===== 单词列表 ===== */
+.word-list {
+  padding: 0 20rpx 40rpx;
+  height: calc(100vh - 260rpx);
+}
+
+.word-item {
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 28rpx 24rpx;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  animation: fadeInUp 0.3s var(--ease-out);
+}
+
+.word-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+
+.word-text {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.phonetic {
+  font-size: 24rpx;
+  color: var(--text-muted);
+  margin: 0 16rpx;
+}
+
+.word-part {
+  font-size: 22rpx;
+  color: var(--purple);
+  background: rgba(102, 126, 234, 0.08);
+  padding: 4rpx 14rpx;
+  border-radius: 8rpx;
+}
+
+.word-definition {
+  font-size: 28rpx;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.word-example {
+  background: var(--bg-page);
+  padding: 20rpx;
+  border-radius: var(--radius-sm);
+  margin-top: 14rpx;
+}
+
+.example-sentence {
+  font-size: 26rpx;
+  color: var(--text-secondary);
+  font-style: italic;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.example-translation {
+  font-size: 24rpx;
+  color: var(--text-muted);
+  display: block;
+}

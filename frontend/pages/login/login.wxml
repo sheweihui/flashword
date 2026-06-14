@@ -1,0 +1,74 @@
+<view class="container">
+  <view class="bg-shapes">
+    <view class="shape shape-1"></view>
+    <view class="shape shape-2"></view>
+    <view class="shape shape-3"></view>
+  </view>
+
+  <!-- Logo 区 -->
+  <view class="logo-section">
+    <view class="logo-wrap">
+      <text class="logo-emoji">📚</text>
+    </view>
+    <text class="title">背单词</text>
+    <text class="subtitle">每天进步一点点</text>
+  </view>
+
+  <!-- 表单卡片（磨砂玻璃） -->
+  <view class="form-card card-glass">
+    <!-- Tab 切换 -->
+    <view class="tab-bar">
+      <view class="tab-item {{activeTab === 'login' ? 'active' : ''}}" bindtap="switchTab" data-tab="login">
+        <text>登录</text>
+      </view>
+      <view class="tab-item {{activeTab === 'register' ? 'active' : ''}}" bindtap="switchTab" data-tab="register">
+        <text>注册</text>
+      </view>
+    </view>
+
+    <!-- 登录表单 -->
+    <view class="form-content" wx:if="{{activeTab === 'login'}}">
+      <view class="input-item">
+        <text class="input-icon">👤</text>
+        <input class="input-field" placeholder="请输入用户名" value="{{username}}" bindinput="onUsernameInput" />
+      </view>
+      <view class="input-item">
+        <text class="input-icon">🔒</text>
+        <input class="input-field" placeholder="请输入密码" value="{{password}}" bindinput="onPasswordInput" password="{{!showPassword}}" />
+        <text class="toggle-btn" bindtap="togglePassword">{{showPassword ? '🙈' : '👁️'}}</text>
+      </view>
+      <view class="btn btn-primary btn-block {{isLoading ? 'btn-disabled' : ''}}" bindtap="login" style="margin-top:48rpx">
+        <text>{{isLoading ? '登录中...' : '登 录'}}</text>
+      </view>
+    </view>
+
+    <!-- 注册表单 -->
+    <view class="form-content" wx:if="{{activeTab === 'register'}}">
+      <view class="input-item">
+        <text class="input-icon">👤</text>
+        <input class="input-field" placeholder="用户名（3-20个字符）" value="{{regUsername}}" bindinput="onRegUsernameInput" />
+      </view>
+      <view class="input-item">
+        <text class="input-icon">🎭</text>
+        <input class="input-field" placeholder="昵称（选填）" value="{{regNickname}}" bindinput="onRegNicknameInput" />
+      </view>
+      <view class="input-item">
+        <text class="input-icon">🔒</text>
+        <input class="input-field" placeholder="密码（至少6个字符）" value="{{regPassword}}" bindinput="onRegPasswordInput" password="{{!showRegPassword}}" />
+        <text class="toggle-btn" bindtap="toggleRegPassword">{{showRegPassword ? '🙈' : '👁️'}}</text>
+      </view>
+      <view class="input-item">
+        <text class="input-icon">🔑</text>
+        <input class="input-field" placeholder="确认密码" value="{{regConfirmPassword}}" bindinput="onRegConfirmPasswordInput" password="{{!showRegConfirmPassword}}" />
+        <text class="toggle-btn" bindtap="toggleRegConfirmPassword">{{showRegConfirmPassword ? '🙈' : '👁️'}}</text>
+      </view>
+      <view class="btn btn-success btn-block {{isLoading ? 'btn-disabled' : ''}}" bindtap="register" style="margin-top:32rpx">
+        <text>{{isLoading ? '注册中...' : '立即注册'}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <text>{{activeTab === 'login' ? '登录' : '注册'}}即表示同意服务条款和隐私政策</text>
+  </view>
+</view>

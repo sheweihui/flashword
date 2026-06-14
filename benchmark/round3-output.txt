@@ -1,0 +1,1726 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: benchmark-seckill-1000.js
+        output: json (k6-raw-round3.json)
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 1m30s max duration (incl. graceful stop):
+              * default: Up to 1000 looping VUs for 1m0s over 4 stages (gracefulRampDown: 30s, gracefulStop: 30s)
+
+time="2026-06-02T17:30:01+08:00" level=info msg="=== 预热 1000 个 Token ===" source=console
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+
+Run       [ 100% ] setup()
+default   [   0% ]
+time="2026-06-02T17:31:55+08:00" level=info msg="预热完成: 1000/1000 token 成功" source=console
+
+running (1m55.9s), 0050/1000 VUs, 0 complete and 0 interrupted iterations
+default   [   2% ] 0050/1000 VUs  0m01.0s/1m00.0s
+
+running (1m56.9s), 0100/1000 VUs, 16 complete and 0 interrupted iterations
+default   [   3% ] 0100/1000 VUs  0m02.0s/1m00.0s
+
+running (1m57.9s), 0149/1000 VUs, 21 complete and 0 interrupted iterations
+default   [   5% ] 0149/1000 VUs  0m03.0s/1m00.0s
+
+running (1m58.9s), 0199/1000 VUs, 21 complete and 0 interrupted iterations
+default   [   7% ] 0199/1000 VUs  0m04.0s/1m00.0s
+
+running (1m59.9s), 0249/1000 VUs, 21 complete and 0 interrupted iterations
+default   [   8% ] 0249/1000 VUs  0m05.0s/1m00.0s
+
+running (2m00.9s), 0299/1000 VUs, 22 complete and 0 interrupted iterations
+default   [  10% ] 0299/1000 VUs  0m06.0s/1m00.0s
+
+running (2m01.9s), 0349/1000 VUs, 22 complete and 0 interrupted iterations
+default   [  12% ] 0349/1000 VUs  0m07.0s/1m00.0s
+
+running (2m02.9s), 0399/1000 VUs, 22 complete and 0 interrupted iterations
+default   [  13% ] 0399/1000 VUs  0m08.0s/1m00.0s
+
+running (2m03.9s), 0449/1000 VUs, 22 complete and 0 interrupted iterations
+default   [  15% ] 0449/1000 VUs  0m09.0s/1m00.0s
+
+running (2m04.9s), 0499/1000 VUs, 22 complete and 0 interrupted iterations
+default   [  17% ] 0499/1000 VUs  0m10.0s/1m00.0s
+
+running (2m05.9s), 0524/1000 VUs, 23 complete and 0 interrupted iterations
+default   [  18% ] 0524/1000 VUs  0m11.0s/1m00.0s
+
+running (2m06.9s), 0549/1000 VUs, 24 complete and 0 interrupted iterations
+default   [  20% ] 0549/1000 VUs  0m12.0s/1m00.0s
+
+running (2m07.9s), 0574/1000 VUs, 33 complete and 0 interrupted iterations
+default   [  22% ] 0574/1000 VUs  0m13.0s/1m00.0s
+
+running (2m08.9s), 0599/1000 VUs, 52 complete and 0 interrupted iterations
+default   [  23% ] 0599/1000 VUs  0m14.0s/1m00.0s
+
+running (2m09.9s), 0624/1000 VUs, 72 complete and 0 interrupted iterations
+default   [  25% ] 0624/1000 VUs  0m15.0s/1m00.0s
+
+running (2m10.9s), 0649/1000 VUs, 112 complete and 0 interrupted iterations
+default   [  27% ] 0649/1000 VUs  0m16.0s/1m00.0s
+
+running (2m11.9s), 0674/1000 VUs, 128 complete and 0 interrupted iterations
+default   [  28% ] 0674/1000 VUs  0m17.0s/1m00.0s
+
+running (2m12.9s), 0699/1000 VUs, 144 complete and 0 interrupted iterations
+default   [  30% ] 0699/1000 VUs  0m18.0s/1m00.0s
+
+running (2m13.9s), 0724/1000 VUs, 175 complete and 0 interrupted iterations
+default   [  32% ] 0724/1000 VUs  0m19.0s/1m00.0s
+
+running (2m14.9s), 0749/1000 VUs, 216 complete and 0 interrupted iterations
+default   [  33% ] 0749/1000 VUs  0m20.0s/1m00.0s
+
+running (2m15.9s), 0774/1000 VUs, 268 complete and 0 interrupted iterations
+default   [  35% ] 0774/1000 VUs  0m21.0s/1m00.0s
+
+running (2m16.9s), 0799/1000 VUs, 336 complete and 0 interrupted iterations
+default   [  37% ] 0799/1000 VUs  0m22.0s/1m00.0s
+
+running (2m17.9s), 0824/1000 VUs, 437 complete and 0 interrupted iterations
+default   [  38% ] 0824/1000 VUs  0m23.0s/1m00.0s
+
+running (2m18.9s), 0849/1000 VUs, 475 complete and 0 interrupted iterations
+default   [  40% ] 0849/1000 VUs  0m24.0s/1m00.0s
+
+running (2m19.9s), 0874/1000 VUs, 517 complete and 0 interrupted iterations
+default   [  42% ] 0874/1000 VUs  0m25.0s/1m00.0s
+
+running (2m20.9s), 0899/1000 VUs, 528 complete and 0 interrupted iterations
+default   [  43% ] 0899/1000 VUs  0m26.0s/1m00.0s
+
+running (2m21.9s), 0924/1000 VUs, 533 complete and 0 interrupted iterations
+default   [  45% ] 0924/1000 VUs  0m27.0s/1m00.0s
+
+running (2m22.9s), 0949/1000 VUs, 543 complete and 0 interrupted iterations
+default   [  47% ] 0949/1000 VUs  0m28.0s/1m00.0s
+
+running (2m23.9s), 0974/1000 VUs, 553 complete and 0 interrupted iterations
+default   [  48% ] 0974/1000 VUs  0m29.0s/1m00.0s
+
+running (2m24.9s), 0999/1000 VUs, 588 complete and 0 interrupted iterations
+default   [  50% ] 0999/1000 VUs  0m30.0s/1m00.0s
+
+running (2m25.9s), 1000/1000 VUs, 639 complete and 0 interrupted iterations
+default   [  52% ] 1000/1000 VUs  0m31.0s/1m00.0s
+
+running (2m26.9s), 1000/1000 VUs, 640 complete and 0 interrupted iterations
+default   [  53% ] 1000/1000 VUs  0m32.0s/1m00.0s
+
+running (2m27.9s), 1000/1000 VUs, 684 complete and 0 interrupted iterations
+default   [  55% ] 1000/1000 VUs  0m33.0s/1m00.0s
+
+running (2m28.9s), 1000/1000 VUs, 746 complete and 0 interrupted iterations
+default   [  57% ] 1000/1000 VUs  0m34.0s/1m00.0s
+
+running (2m29.9s), 1000/1000 VUs, 812 complete and 0 interrupted iterations
+default   [  58% ] 1000/1000 VUs  0m35.0s/1m00.0s
+
+running (2m30.9s), 1000/1000 VUs, 815 complete and 0 interrupted iterations
+default   [  60% ] 1000/1000 VUs  0m36.0s/1m00.0s
+
+running (2m31.9s), 1000/1000 VUs, 825 complete and 0 interrupted iterations
+default   [  62% ] 1000/1000 VUs  0m37.0s/1m00.0s
+
+running (2m32.9s), 1000/1000 VUs, 876 complete and 0 interrupted iterations
+default   [  63% ] 1000/1000 VUs  0m38.0s/1m00.0s
+
+running (2m33.9s), 1000/1000 VUs, 951 complete and 0 interrupted iterations
+default   [  65% ] 1000/1000 VUs  0m39.0s/1m00.0s
+
+running (2m34.9s), 1000/1000 VUs, 963 complete and 0 interrupted iterations
+default   [  67% ] 1000/1000 VUs  0m40.0s/1m00.0s
+
+running (2m35.9s), 1000/1000 VUs, 995 complete and 0 interrupted iterations
+default   [  68% ] 1000/1000 VUs  0m41.0s/1m00.0s
+
+running (2m36.9s), 1000/1000 VUs, 1032 complete and 0 interrupted iterations
+default   [  70% ] 1000/1000 VUs  0m42.0s/1m00.0s
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m37.9s), 1000/1000 VUs, 1061 complete and 0 interrupted iterations
+default   [  72% ] 1000/1000 VUs  0m43.0s/1m00.0s
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:38+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:39+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m38.9s), 1000/1000 VUs, 1071 complete and 0 interrupted iterations
+default   [  73% ] 1000/1000 VUs  0m44.0s/1m00.0s
+time="2026-06-02T17:32:40+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m39.9s), 1000/1000 VUs, 1125 complete and 0 interrupted iterations
+default   [  75% ] 1000/1000 VUs  0m45.0s/1m00.0s
+time="2026-06-02T17:32:41+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:41+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m40.9s), 1000/1000 VUs, 1143 complete and 0 interrupted iterations
+default   [  77% ] 1000/1000 VUs  0m46.0s/1m00.0s
+
+running (2m41.9s), 1000/1000 VUs, 1170 complete and 0 interrupted iterations
+default   [  78% ] 1000/1000 VUs  0m47.0s/1m00.0s
+time="2026-06-02T17:32:43+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m42.9s), 1000/1000 VUs, 1191 complete and 0 interrupted iterations
+default   [  80% ] 1000/1000 VUs  0m48.0s/1m00.0s
+
+running (2m43.9s), 1000/1000 VUs, 1194 complete and 0 interrupted iterations
+default   [  82% ] 1000/1000 VUs  0m49.0s/1m00.0s
+
+running (2m44.9s), 1000/1000 VUs, 1207 complete and 0 interrupted iterations
+default   [  83% ] 1000/1000 VUs  0m50.0s/1m00.0s
+time="2026-06-02T17:32:46+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m45.9s), 0999/1000 VUs, 1285 complete and 0 interrupted iterations
+default   [  85% ] 0999/1000 VUs  0m51.0s/1m00.0s
+time="2026-06-02T17:32:46+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:46+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:46+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:46+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m46.9s), 0970/1000 VUs, 1369 complete and 0 interrupted iterations
+default   [  87% ] 0970/1000 VUs  0m52.0s/1m00.0s
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:47+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:48+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m47.9s), 0952/1000 VUs, 1409 complete and 0 interrupted iterations
+default   [  88% ] 0952/1000 VUs  0m53.0s/1m00.0s
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:49+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m48.9s), 0947/1000 VUs, 1452 complete and 0 interrupted iterations
+default   [  90% ] 0947/1000 VUs  0m54.0s/1m00.0s
+time="2026-06-02T17:32:50+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:50+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:50+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m49.9s), 0944/1000 VUs, 1458 complete and 0 interrupted iterations
+default   [  92% ] 0944/1000 VUs  0m55.0s/1m00.0s
+time="2026-06-02T17:32:51+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:51+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:51+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:51+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m50.9s), 0942/1000 VUs, 1463 complete and 0 interrupted iterations
+default   [  93% ] 0942/1000 VUs  0m56.0s/1m00.0s
+time="2026-06-02T17:32:52+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:52+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:52+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:52+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m51.9s), 0940/1000 VUs, 1465 complete and 0 interrupted iterations
+default   [  95% ] 0940/1000 VUs  0m57.0s/1m00.0s
+time="2026-06-02T17:32:52+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m52.9s), 0934/1000 VUs, 1471 complete and 0 interrupted iterations
+default   [  97% ] 0934/1000 VUs  0m58.0s/1m00.0s
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:53+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m53.9s), 0918/1000 VUs, 1487 complete and 0 interrupted iterations
+default   [  98% ] 0918/1000 VUs  0m59.0s/1m00.0s
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:54+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m54.9s), 0886/1000 VUs, 1521 complete and 0 interrupted iterations
+default   [ 100% ] 0886/1000 VUs  1m00.0s/1m00.0s
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:55+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:56+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m55.9s), 0848/1000 VUs, 1559 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:32:57+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m56.9s), 0768/1000 VUs, 1639 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:32:57+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:58+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m57.9s), 0768/1000 VUs, 1639 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m58.9s), 0745/1000 VUs, 1662 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:32:59+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (2m59.9s), 0683/1000 VUs, 1724 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:00+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:01+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:01+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m00.9s), 0608/1000 VUs, 1799 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:01+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:02+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m01.9s), 0593/1000 VUs, 1814 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m02.9s), 0588/1000 VUs, 1819 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:03+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:04+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m03.9s), 0561/1000 VUs, 1846 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:05+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m04.9s), 0460/1000 VUs, 1947 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m05.9s), 0447/1000 VUs, 1960 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:06+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m06.9s), 0424/1000 VUs, 1983 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:07+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:08+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m07.9s), 0389/1000 VUs, 2018 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m08.9s), 0352/1000 VUs, 2055 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:09+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m09.9s), 0343/1000 VUs, 2064 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:10+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m10.9s), 0287/1000 VUs, 2120 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:11+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m11.9s), 0268/1000 VUs, 2139 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:12+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:13+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m12.9s), 0245/1000 VUs, 2162 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:14+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:14+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m13.9s), 0218/1000 VUs, 2189 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:14+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:14+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:15+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m14.9s), 0214/1000 VUs, 2193 complete and 0 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m15.9s), 0198/1000 VUs, 2205 complete and 4 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:16+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m16.9s), 0124/1000 VUs, 2234 complete and 49 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:17+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:18+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m17.9s), 0074/1000 VUs, 2282 complete and 51 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:19+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m18.9s), 0049/1000 VUs, 2307 complete and 51 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:20+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:20+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:20+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m19.9s), 0011/1000 VUs, 2345 complete and 51 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:21+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:21+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:21+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+running (3m20.9s), 0007/1000 VUs, 2349 complete and 51 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+
+running (3m21.9s), 0003/1000 VUs, 2352 complete and 52 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+
+running (3m22.9s), 0002/1000 VUs, 2353 complete and 52 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+
+running (3m23.9s), 0002/1000 VUs, 2353 complete and 52 interrupted iterations
+default ↓ [ 100% ] 0886/1000 VUs  1m0s
+time="2026-06-02T17:33:24+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+time="2026-06-02T17:33:25+08:00" level=warning msg="Request Failed" error="Post \"http://localhost:8080/api/store/flash-sale/purchase/13\": request timeout"
+
+
+  █ THRESHOLDS 
+
+    http_req_failed
+    ✗ 'rate<0.05' rate=31.11%
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    flash_duration.................: avg=22.72s min=179.68ms med=25.34s max=30.06s p(90)=30s    p(95)=30s   
+    flash_other_error..............: 100.00% 2022 out of 2022
+    flash_out_of_stock.............: 100.00% 385 out of 385
+
+    HTTP
+    http_req_duration..............: avg=16.23s min=179.68ms med=16.11s max=30.06s p(90)=30s    p(95)=30s   
+      { expected_response:true }...: avg=10.02s min=179.68ms med=12.1s  max=28.97s p(90)=23.58s p(95)=25.78s
+    http_req_failed................: 31.11%  1060 out of 3407
+    http_reqs......................: 3407    16.64517/s
+
+    EXECUTION
+    iteration_duration.............: avg=23.8s  min=1.26s    med=26.14s max=31.55s p(90)=31.38s p(95)=31.44s
+    iterations.....................: 2353    11.495769/s
+    vus............................: 2       min=0            max=1000
+    vus_max........................: 1000    min=1000         max=1000
+
+    NETWORK
+    data_received..................: 818 kB  4.0 kB/s
+    data_sent......................: 693 kB  3.4 kB/s
+
+
+
+
+running (3m24.7s), 0000/1000 VUs, 2353 complete and 54 interrupted iterations
+default ✓ [ 100% ] 0000/1000 VUs  1m0s
+time="2026-06-02T17:33:27+08:00" level=error msg="thresholds on metrics 'http_req_failed' have been crossed"
